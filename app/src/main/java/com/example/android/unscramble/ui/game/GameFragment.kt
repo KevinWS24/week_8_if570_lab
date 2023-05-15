@@ -80,6 +80,7 @@ class GameFragment : Fragment() {
         }
     }
 
+    * Skips the current word without changing the score.
     private fun onSkipWord() {
         if (viewModel.nextWord()) {
             setErrorTextField(false)
