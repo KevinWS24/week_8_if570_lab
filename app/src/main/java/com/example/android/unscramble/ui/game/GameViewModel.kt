@@ -98,10 +98,9 @@ class GameViewModel : ViewModel() {
             .show()
     }
 
-
     fun reinitializeData() {
-        _score.value = 0
-        _currentWordCount.value = 0
+        _score = 0
+        _currentWordCount = 0
         wordsList.clear()
         getNextWord()
     }
