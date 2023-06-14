@@ -122,5 +122,9 @@ class GameFragment : Fragment() {
             binding.textInputEditText.text = null
         }
     }
+    override fun onDetach() {
+        super.onDetach()
+        Log.d("GameFragment", "GameFragment destroyed!")
+    }
 
 }
